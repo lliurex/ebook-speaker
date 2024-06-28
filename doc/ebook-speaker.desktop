@@ -1,15 +1,21 @@
 [Desktop Entry]
 Version=1.0
 Name=eBook speaker
+Name[es]=Lector de eBook
+Name[ca]=Lector de eBook
 Comment=Speaking e-reader
+Comment[es]=Lector para eBooks en diversos formatos a través del sintetizador
+Comment[ca]=Lector per a eBooks en diversos formats mitjançant el sintetitzador
 MimeType=application/epub+zip;
-Exec=eBook-speaker %f
-Icon=eBook-speaker
+Exec=ebook-speaker %f
+Icon=ebook-speaker
 Terminal=true
 Type=Application
 Categories=AudioVideo;Audio;Accessibility;ConsoleOnly;
 Keywords=documents;voice;audio;reading;listen;listening;braille;text;
 GenericName=Speaking e-reader
 GenericName[en]=Speaking e-reader
+GenericName[es]=Lector de E-Books
+GenericName[ca]=Lector de E-Books
 GenericName[de]=Sprechendes E-Reader
 GenericName[nl]=Sprekende e-reader
