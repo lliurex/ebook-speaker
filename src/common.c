@@ -923,6 +923,7 @@ void get_list_of_sound_devices (misc_t *misc, audio_info_t *sound_devices)
    for (g = 0; !found && g < ngroups; g++)
       found = groups[g] == grp->gr_gid;
 
+/* ---> DISABLE GROUP CHECK
    if (found == 0)
    {
       beep ();
@@ -934,6 +935,7 @@ void get_list_of_sound_devices (misc_t *misc, audio_info_t *sound_devices)
       remove_tmp_dir (misc);
       _exit (EXIT_FAILURE);
    } // if
+<----- */
 
 // first sink is the ALSA default device
    strcpy (sound_devices[0].device, "default");
