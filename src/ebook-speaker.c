@@ -633,8 +633,7 @@ void get_bookmark (misc_t *misc, my_attribute_t *my_attribute,
    free (str);
    if (! (local_reader = xmlReaderWalker (local_doc)))
    {
-      if (misc->current_sink < 0)
-         select_next_output_device (misc, daisy, sound_devices);
+      select_next_output_device (misc, daisy, sound_devices); 
       return;
    } // if
    do
