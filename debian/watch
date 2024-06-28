@@ -1,0 +1,8 @@
+# See uscan(1) for format
+
+# Compulsory line, this is a version 3 file
+version=3
+
+opts=versionmangle=s/^(\d\.\d)$/$1\.0/,pgpsigurlmangle=s/$/.asc/ \
+  http://ta.twi.tudelft.nl/dv/staff/lemmens/jlemmens.nl/ \
+  (?:.*/)?e[bB]{1}ook-speaker-@ANY_VERSION@@ARCHIVE_EXT@

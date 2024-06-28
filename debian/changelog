@@ -1,0 +1,302 @@
+ebook-speaker (6.2.0-4) unstable; urgency=medium
+
+  * control: Bump Standards-Version to 4.6.0 (no change)
+  * watch: Update upstream homepage URL.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 08 Jan 2022 18:01:53 +0100
+
+ebook-speaker (6.2.0-3) unstable; urgency=medium
+
+  * copyright: Avoid ./ in paths.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 11 Dec 2021 11:51:58 +0100
+
+ebook-speaker (6.2.0-2) unstable; urgency=medium
+
+  * patches/format: Fix spurious format parsing (Closes: Bug#997158).
+  * patches/automake: Fix double AM_INIT_AUTOMAKE call.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 23 Oct 2021 22:35:37 +0200
+
+ebook-speaker (6.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+    - patches/crash: Upstreamed.
+
+ -- Samuel Thibault <sthibault@debian.org>  Mon, 23 Aug 2021 01:49:14 +0200
+
+ebook-speaker (6.1.0-1) experimental; urgency=medium
+
+  [ Samuel Thibault ]
+  * New upstream release.
+    - patches/crash: Fix alsa crash.
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Use canonical URL in Vcs-Browser.
+
+  [ Samuel Thibault ]
+  * debian/ebook-speaker.lintian-overrides: Removed from lintian.
+  * rules: Drop ddeb-migration rules, now useless
+
+ -- Samuel Thibault <sthibault@debian.org>  Thu, 05 Aug 2021 16:57:15 +0200
+
+ebook-speaker (5.5.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 12 Sep 2020 19:39:39 +0200
+
+ebook-speaker (5.5.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - patches/ubsan: Upstreamed.
+    - patches/clang: Upstreamed.
+  * control: Bump Standards-Version to 4.5.0 (no change)
+
+ -- Samuel Thibault <sthibault@debian.org>  Mon, 07 Sep 2020 19:50:57 +0200
+
+ebook-speaker (5.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * watch: Generalize pattern.
+  * control: Update alioth list domain.
+  * patches/clang: Fix build with clang.
+
+ -- Samuel Thibault <sthibault@debian.org>  Fri, 08 May 2020 23:38:18 +0200
+
+ebook-speaker (5.3-2) unstable; urgency=medium
+
+  * control: Add myself as uploader.
+  * patches/ubsan: Fix build on various archs by dropping -fsanitize=null.
+
+ -- Samuel Thibault <sthibault@debian.org>  Wed, 07 Aug 2019 13:32:11 +0200
+
+ebook-speaker (5.3-1) unstable; urgency=medium
+
+  * New upstream release.
+    - control: Add libpulse-dev and libsndfile1-dev build-dep.
+    - rules, ebook-speaker.{install,doc,manpages,links}: Fix file names.
+    - patches/path-fix: Fix patch in desktop file.
+  * control: Bump Standards-Version to 4.4.0 (no changes).
+
+ -- Samuel Thibault <sthibault@debian.org>  Tue, 06 Aug 2019 23:34:56 +0200
+
+ebook-speaker (5.0.0-1) unstable; urgency=medium
+
+  [ Samuel Thibault ]
+  * Use canonical anonscm vcs URL.
+  * control: Update maintainer mailing list.
+
+  [ Paul Gevers ]
+  * New upstream release
+  * Minor packaging updates
+
+ -- Paul Gevers <elbrus@debian.org>  Fri, 23 Feb 2018 13:51:11 +0100
+
+ebook-speaker (4.1.0-2) unstable; urgency=medium
+
+  [ Samuel Thibault ]
+  * control: Drop html2text suggestion, it is not used any more.
+
+  [ Paul Gevers ]
+  * Prevent txt2man -p to pick up the build dir to enable reproducible
+    builds. Will be fixed in next upstream release (Closes: #844228)
+  * Fix spelling mistake in man page found by Lintian
+  * Bump compat level to 10
+
+ -- Paul Gevers <elbrus@debian.org>  Sat, 10 Dec 2016 10:09:29 +0100
+
+ebook-speaker (4.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Paul Gevers <elbrus@debian.org>  Tue, 09 Aug 2016 22:03:17 +0200
+
+ebook-speaker (4.0.0-1) unstable; urgency=medium
+
+  [ Samuel Thibault ]
+  * ebook-speaker.menu: Remove, superseded by XDG desktop file.
+  * control: Bump Standards-Version to 3.9.8.
+
+  [ Paul Gevers ]
+  * New upstream release
+  * Enable hardening flags
+  * Move pandoc to Recommends, it is often needed
+
+ -- Paul Gevers <elbrus@debian.org>  Thu, 16 Jun 2016 21:01:53 +0200
+
+ebook-speaker (3.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop patch, applied upstream
+
+ -- Paul Gevers <elbrus@debian.org>  Sun, 10 Apr 2016 08:31:26 +0200
+
+ebook-speaker (3.0.0-1) unstable; urgency=medium
+
+  [ Paul Gevers ]
+  * New upstream release
+  * Update d/copyright; including typo fixes (thanks Lintian) and upstream
+    homepage
+  * Drop unneeded build dependencies
+  * Minor changes to d/control: description and suggested packages
+  * Simplify CFLAGS in d/rules
+  * Drop menu as per tech-ctte ruling
+  * Update Vcs-* fields to https
+
+  [ Samuel Thibault ]
+  * watch: Generalize URL.
+  * rules: Simplify strip rule.
+  * rules: Set ddeb-migration.
+  * control: Depend on debhelper 9.20150628 for ddeb-migration.
+  * control: Bump Standards-Version to 3.9.7 (no change).
+
+ -- Paul Gevers <elbrus@debian.org>  Sat, 20 Feb 2016 22:09:57 +0100
+
+ebook-speaker (2.8.1-1) unstable; urgency=medium
+
+  * New upstream release
+    - Drop patch (applied upstream)
+  * Update Suggests and Depends (add autopoint for easy backporting)
+  * Update list of supported text formats
+  * Add d/gbp.conf for easier packaging
+
+ -- Paul Gevers <elbrus@debian.org>  Sat, 05 Apr 2014 15:37:13 +0200
+
+ebook-speaker (2.7.1-1) unstable; urgency=low
+
+  [ Samuel Thibault ]
+  * Bump Standards-Version to 3.9.5 (no changes).
+
+  [ Paul Gevers ]
+  * New upstream release
+    - Drop patch
+  * Add patch to add NAME section to man page (thanks lintian)
+  * Update watch file for different case.
+
+ -- Paul Gevers <elbrus@debian.org>  Sun, 29 Dec 2013 19:52:25 +0100
+
+ebook-speaker (2.5.3-1) unstable; urgency=low
+
+  * New upstream release
+    - Drop patches
+  * Add symlinks for new translations
+  * Improve i18n for Debian (new patch)
+  * Add README.testing to ease group packaging
+
+ -- Paul Gevers <elbrus@debian.org>  Mon, 21 Oct 2013 21:09:09 +0200
+
+ebook-speaker (2.5.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Drop obsolete patch (now upstream)
+  * Depend on debhelper > 9 to drop hardening wrapper
+  * Small style changes in d/rules
+  * Add patch to Makefile.am to swap the order of the doc and man
+    directory, as doc depends on man.
+  * Add keywords to the desktop file (thanks lintian)
+
+ -- Paul Gevers <elbrus@debian.org>  Tue, 08 Oct 2013 18:12:16 +0200
+
+ebook-speaker (2.5.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Remove patches
+  * Build, install and register html version of man pages
+  * Install menu item (got lost a long time ago)
+  * Update upstream website address
+  * Make sure that translations work by symlinking eBook-speaker case
+  * Add lintian override for hyphens, they come from txt2man
+
+ -- Paul Gevers <elbrus@debian.org>  Sun, 22 Sep 2013 22:03:59 +0200
+
+ebook-speaker (2.4.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Update d/* files for new upstream layout and build system
+  * Remove obsolete patches
+    - ebook-speaker now does something useful without arguments
+  * Update d/copyright for new upstream source, including autoconf stuff
+  * Update dependencies
+  * Add 3 new patches to fix minor build issues
+   - Allow prefix from configure to pass to the program
+   - html building from man page is broken, disable completely
+   - gettext domain is lowercase in current build system
+  * Fix typo in man page (thanks lintian)
+  * Update Vcs-* files to canonical location (thanks lintian)
+
+ -- Paul Gevers <elbrus@debian.org>  Sat, 27 Jul 2013 10:06:35 +0200
+
+ebook-speaker (2.3.2-2) unstable; urgency=low
+
+  * Upload to unstable
+  * New patches:
+    - fix_build_on_non_linux.patch to prevent build failure on non-linux
+      by not loading unneeded header files
+    - dont_add_desktop_to_menu.patch to prevent the menu item to appear as it
+      does not do anything useful (Closes: #704726)
+
+ -- Paul Gevers <elbrus@debian.org>  Fri, 24 May 2013 21:48:57 +0200
+
+ebook-speaker (2.3.2-1) experimental; urgency=low
+
+  [ Samuel Thibault ]
+  * Remove DM-Upload-Allowed field, Paul is a DD now.
+
+  [ Paul Gevers ]
+  * New upstream release
+    - Update d/copyright to conform with new years and content
+    - Update d/control with build dependencies and suggest, removed recommends
+  * Remove patches, code changed completely
+  * Update d/watch to make sure source is found
+  * Update my e-mail address
+  * Automate installation of all languages in d/rules and d/*.install
+  * Update Standard to 3.9.4 (no changes needed)
+  * Create and install scalable and fixed icons (72x72 and 48x48)
+
+ -- Paul Gevers <elbrus@debian.org>  Sun, 13 Jan 2013 21:15:15 +0100
+
+ebook-speaker (2.0-3) unstable; urgency=low
+
+  * Add mbrola.patch to allow voices with longer than 5 characters
+    descriptor (Closes: Bug#697350)
+
+ -- Paul Gevers <elbrus@debian.org>  Wed, 09 Jan 2013 21:02:39 +0100
+
+ebook-speaker (2.0-2) unstable; urgency=low
+
+  [ Samuel Thibault ]
+  * debian/patches/ncx.patch: New patch to fix parsing ncx files
+    (Closes: Bug#660302).
+  * control: Bump Standards-Version to 3.9.3 (no changes).
+  * debian/patches/realname.patch: New patch to fix realname to really return
+    a valid string.
+
+  [ Paul Gevers ]
+  * Update d/copyright file with new format URL
+
+ -- Paul Gevers <paul@climbing.nl>  Sat, 03 Mar 2012 19:55:24 +0100
+
+ebook-speaker (2.0-1) unstable; urgency=low
+
+  [ Samuel Thibault ]
+  * control: Depend on hardening-check.
+  * rules: Set DEB_BUILD_HARDENING=1 to enable hardening.
+
+  [ Paul Gevers ]
+  * New upstream release
+  * Add libmagic-dev to build dependencies
+  * Add convlit and zip to recommends for .lit support
+  * Update description for newly supported .lit format
+  * Removed patch: not applicable anymore
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 09 Dec 2011 08:58:55 +0100
+
+ebook-speaker (1.2-1) unstable; urgency=low
+
+  * Initial release (closes: #641899)
+
+ -- Paul Gevers <paul@climbing.nl>  Sun, 18 Sep 2011 16:56:52 +0200

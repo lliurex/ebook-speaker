@@ -1,0 +1,32 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export DEB_CFLAGS_MAINT_APPEND = -Wall $(shell xml2-config --cflags)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+ICONSDIR=debian/icons/hicolor
+
+%:
+	dh $@
+
+override_dh_clean:
+	rm -rf $(ICONSDIR)
+	dh_clean
+
+override_dh_auto_build:
+	dh_auto_build
+
+	# Building icons
+	for size in 48 72 ; do \
+		mkdir -p $(ICONSDIR)/$${size}x$${size}/apps ; \
+		rsvg-convert --width $$size --height $$size doc/ebook-speaker.svg \
+			--output $(ICONSDIR)/$${size}x$${size}/apps/ebook-speaker.png ; done
+	mkdir -p $(ICONSDIR)/scalable/apps
+	gzip -c9 doc/ebook-speaker.svg > $(ICONSDIR)/scalable/apps/ebook-speaker.svgz
+
+override_dh_auto_install:
+	# Now we only have one package make sure we still install to tmp as we want
+	# to only really install the stuff we need, not everything by default.
+	dh_auto_install --destdir=debian/tmp
