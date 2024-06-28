@@ -251,7 +251,7 @@ void get_next_phrase (misc_t *misc, my_attribute_t *my_attribute,
             misc->phrase_nr++;
             wattroff (misc->screenwin, A_BOLD);
             strncpy (misc->str, misc->label, 80);
-            mvwprintw (misc->screenwin, 22, 0, misc->str);
+            mvwprintw (misc->screenwin, 22, 0, "%s", misc->str);
             wclrtoeol (misc->screenwin);
             wmove (misc->screenwin, daisy[misc->current].y,
                    daisy[misc->current].x - 1);
@@ -1708,7 +1708,7 @@ void browse (misc_t *misc, my_attribute_t *my_attribute, daisy_t *daisy,
             misc->depth = 1;
          nodelay (misc->screenwin, TRUE);
          wclear (misc->titlewin);
-         mvwprintw (misc->titlewin, 0, 0, misc->copyright);
+         mvwprintw (misc->titlewin, 0, 0, "%s", misc->copyright);
          if ((int) strlen (misc->daisy_title) +
              (int) strlen (misc->copyright) >= misc->max_x)
          {
@@ -2571,7 +2571,7 @@ void play_epub (misc_t *misc, my_attribute_t *my_attribute,
    view_screen (misc, daisy);
 
    wclear (misc->titlewin);
-   mvwprintw (misc->titlewin, 0, 0, misc->copyright);
+   mvwprintw (misc->titlewin, 0, 0, "%s", misc->copyright);
    if ((int) strlen (misc->daisy_title) + (int)
        strlen (misc->copyright) >= misc->max_x)
       mvwprintw (misc->titlewin, 0, misc->max_x - (int) 

@@ -58,7 +58,7 @@ eBook_file  Give an eBook_file as argument to eBook-speaker.  Many eBook formats
 
   When no input-file is supplied, eBook-speaker will bring up a file-manager. See KEYBOARD COMMANDS IN THE FILEMANAGER.
 
--b n | y | position  Set the initial break_on_EOL or position. After quiting eBook-speaker. This setting will be saved and used as default for future books. It can be overruled with the 'b'-command for each individual book. See the 'b' command.
+-b n | y | position  Set the initial break_on_EOL or position. After quitting eBook-speaker. This setting will be saved and used as default for future books. It can be overruled with the 'b'-command for each individual book. See the 'b' command.
 
 -c  eBook-speaker use tesseract for OCR by default. This option forces eBook-speaker to use cuneiform instead.
 
@@ -194,7 +194,7 @@ Didier Spaier <didier@slint.fr>  for the TTS enhancements.
 FILES
 ~/.eBook-speaker/  This directory contains the bookmarks in XML-format.  Each file has the name of the book and contains the name of the current item, the start-phrase of that item, the current level, the desired TTS, the desired reading speed, the desired phrase-break point and the current sink in the list of the available sound devices.
 ~/.eBook-speaker.xml  This file, in XML-format, contains a list of available TTS's. (See TTS EXAMPLES)
-/tmp/eBook-speaker.XXXXXX  eBook-speaker makes use of a temporary directory. It is removed after quiting.
+/tmp/eBook-speaker.XXXXXX  eBook-speaker makes use of a temporary directory. It is removed after quitting.
 
 NOTES
 An EPUB-book has two index-files for navigation, a NCX and an OPF file. eBook-speaker tries to detemine which of these two files give the best result. But sometimes eBook-speaker is not able to make the best choice. When in doubt use option "--N" to force the use of NCX or "-O" to force the OPF.
