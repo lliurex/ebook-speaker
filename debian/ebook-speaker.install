@@ -1,0 +1,4 @@
+src/ebook-speaker usr/bin/
+doc/ebook-speaker.desktop usr/share/applications/
+debian/icons usr/share
+usr/share/locale/*/LC_MESSAGES/ebook-speaker.mo

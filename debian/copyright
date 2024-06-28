@@ -1,0 +1,126 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: eBook-speaker
+Source: http://www.jlemmens.nl
+Upstream-Contact: Jos Lemmens <jos@jlemmens.nl>
+
+Files: *
+Copyright: © 2011-2015 Jos Lemmens <jos@jlemmens.nl>
+License: GPL-2+
+
+Files: doc/ebook-speaker*.svg
+Copyright: The Oxygen Icon Theme
+    Copyright (C) 2007 Nuno Pinheiro <nuno@oxygen-icons.org>
+    Copyright (C) 2007 David Vignoni <david@icon-king.com>
+    Copyright (C) 2007 David Miller <miller@oxygen-icons.org>
+    Copyright (C) 2007 Johann Ollivier Lapeyre <johann@oxygen-icons.org>
+    Copyright (C) 2007 Kenneth Wimer <kwwii@bootsplash.org>
+    Copyright (C) 2007 Riccardo Iaconelli <riccardo@oxygen-icons.org>
+    and others
+    copyright © 2012-2013 Paul Gevers <elbrus@debian.org>
+Comment: These icons are based on the accessories-text-editor.svgz icon from
+ the oxygen-icons-4.8-4 package.
+License: LGPL-3+
+
+Files: ABOUT-NLS config.guess config.sub
+Copyright: 1992-2012 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: config.rpath
+Copyright: 1996 Gordon Matzigkeit <gord@gnu.ai.mit.edu>
+           1996-2010 Free Software Foundation, Inc.
+License: FSF-free
+
+Files: aclocal.m4 config.h.in m4/* po/Makefile.in.in Makefile.in
+Copyright: 1996-2010 Free Software Foundation, Inc.
+Comment: several files are automatically generated
+License: FSF-free
+
+Files: debian/*
+Copyright: © 2011-2016 Paul Gevers <elbrus@debian.org>
+License: GPL-2+
+
+Files: install-sh
+Copyright: 1994 X Consortium
+License: expat and public-domain
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+ AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNEC-
+ TION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of the X Consortium shall not
+ be used in advertising or otherwise to promote the sale, use or other deal-
+ ings in this Software without prior written authorization from the X Consor-
+ tium.
+ .
+ FSF changes to this file are in the public domain.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License, version 2, can be found in /usr/share/common-licenses/GPL-2.
+
+License: LGPL-3+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 3 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Less General Public
+ License, version 3, can be found in /usr/share/common-licenses/LGPL-3.
+Comment:
+ The GNU Lesser General Public License or LGPL is written for
+ software libraries in the first place. We expressly want the LGPL to
+ be valid for this artwork library too.
+ .
+ KDE Oxygen theme icons is a special kind of software library, it is an
+ artwork library, it's elements can be used in a Graphical User Interface, or
+ GUI.
+ .
+ Source code, for this library means:
+  - where they exist, SVG;
+  - otherwise, if applicable, the multi-layered formats xcf or psd, or
+    otherwise png.
+ .
+ The LGPL in some sections obliges you to make the files carry
+ notices. With images this is in some cases impossible or hardly useful.
+ .
+ With this library a notice is placed at a prominent place in the directory
+ containing the elements. You may follow this practice.
+ .
+ The exception in section 5 of the GNU Lesser General Public License covers
+ the use of elements of this art library in a GUI.
+
+License: FSF-free
+ This file is free software; the Free Software Foundation gives
+ unlimited permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
+
